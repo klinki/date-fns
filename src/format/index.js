@@ -301,7 +301,7 @@ var unescapedLatinCharacterRegExp = /[a-zA-Z]/
  *
  * - Characters are now escaped using single quote symbols (`'`) instead of square brackets.
  *
- * @param {Date|Number} date - the original date
+ * @param {Readonly<Date>|Number} date - the original date
  * @param {String} format - the string of tokens
  * @param {Object} [options] - an object with options.
  * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)

@@ -14,7 +14,7 @@ import addDays from '../addDays/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the date to be changed
+ * @param {Readonly<Date>|Number} date - the date to be changed
  * @param {Number} day - the day of the week of the new date
  * @param {Object} [options] - an object with options.
  * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)

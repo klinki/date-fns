@@ -35,4 +35,7 @@ type Locale = {
   }
 }
 
-declare module.exports: (date: Date | number, interval: Interval) => boolean
+declare module.exports: (
+  date: $Readonly<Date> | number,
+  interval: Interval
+) => boolean

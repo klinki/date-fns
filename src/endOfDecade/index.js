@@ -12,7 +12,7 @@ import toDate from '../toDate/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the original date
+ * @param {Readonly<Date>|Number} date - the original date
  * @returns {Date} the end of a decade
  * @param {Object} [options] - an object with options.
  * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}

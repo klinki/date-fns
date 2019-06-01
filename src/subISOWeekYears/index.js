@@ -20,7 +20,7 @@ import addISOWeekYears from '../addISOWeekYears/index.js'
  *   This change makes the name consistent with
  *   locale-dependent week-numbering year helpers, e.g., `setWeekYear`.
  *
- * @param {Date|Number} date - the date to be changed
+ * @param {Readonly<Date>|Number} date - the date to be changed
  * @param {Number} amount - the amount of ISO week-numbering years to be subtracted
  * @returns {Date} the new date with the ISO week-numbering years subtracted
  * @throws {TypeError} 2 arguments required

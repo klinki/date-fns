@@ -19,8 +19,8 @@ import getISOWeekYear from '../getISOWeekYear/index.js'
  *   This change makes the name consistent with
  *   locale-dependent week-numbering year helpers, e.g., `addWeekYears`.
  *
- * @param {Date|Number} dateLeft - the later date
- * @param {Date|Number} dateRight - the earlier date
+ * @param {Readonly<Date>|Number} dateLeft - the later date
+ * @param {Readonly<Date>|Number} dateRight - the earlier date
  * @returns {Number} the number of calendar ISO week-numbering years
  * @throws {TypeError} 2 arguments required
  *

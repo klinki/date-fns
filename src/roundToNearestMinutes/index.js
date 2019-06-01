@@ -13,7 +13,7 @@ import toInteger from '../_lib/toInteger/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the date to round
+ * @param {Readonly<Date>|Number} date - the date to round
  * @param {Object} [options] - an object with options.
  * @param {Number} [options.nearestTo=1] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
  * @returns {Date} the new date rounded to the closest minute

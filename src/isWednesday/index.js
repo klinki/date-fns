@@ -12,7 +12,7 @@ import toDate from '../toDate/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the date to check
+ * @param {Readonly<Date>|Number} date - the date to check
  * @returns {Boolean} the date is Wednesday
  * @throws {TypeError} 1 argument required
  *

@@ -12,8 +12,8 @@ import differenceInMilliseconds from '../differenceInMilliseconds/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} dateLeft - the later date
- * @param {Date|Number} dateRight - the earlier date
+ * @param {Readonly<Date>|Number} dateLeft - the later date
+ * @param {Readonly<Date>|Number} dateRight - the earlier date
  * @returns {Number} the number of seconds
  * @throws {TypeError} 2 arguments required
  *

@@ -36,6 +36,6 @@ type Locale = {
 }
 
 declare module.exports: (
-  dateLeft: Date | number,
-  dateRight: Date | number
+  dateLeft: $Readonly<Date> | number,
+  dateRight: $Readonly<Date> | number
 ) => boolean

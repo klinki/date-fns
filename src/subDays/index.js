@@ -13,7 +13,7 @@ import addDays from '../addDays/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the date to be changed
+ * @param {Readonly<Date>|Number} date - the date to be changed
  * @param {Number} amount - the amount of days to be subtracted
  * @returns {Date} the new date with the days subtracted
  * @throws {TypeError} 2 arguments required

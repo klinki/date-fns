@@ -15,7 +15,7 @@ import toDate from '../toDate/index.js'
  * - Now, `closestIndexTo` doesn't throw an exception
  *   when the second argument is not an array, and returns Invalid Date instead.
  *
- * @param {Date|Number} dateToCompare - the date to compare with
+ * @param {Readonly<Date>|Number} dateToCompare - the date to compare with
  * @param {Date[]|Number[]} datesArray - the array to search
  * @returns {Number} an index of the date closest to the given date
  * @throws {TypeError} 2 arguments required

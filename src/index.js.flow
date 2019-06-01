@@ -36,25 +36,25 @@ type Locale = {
 }
 
 declare module.exports: {
-  addDays: (date: Date | number, amount: number) => Date,
+  addDays: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addHours: (date: Date | number, amount: number) => Date,
+  addHours: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addISOWeekYears: (date: Date | number, amount: number) => Date,
+  addISOWeekYears: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addMilliseconds: (date: Date | number, amount: number) => Date,
+  addMilliseconds: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addMinutes: (date: Date | number, amount: number) => Date,
+  addMinutes: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addMonths: (date: Date | number, amount: number) => Date,
+  addMonths: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addQuarters: (date: Date | number, amount: number) => Date,
+  addQuarters: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addSeconds: (date: Date | number, amount: number) => Date,
+  addSeconds: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addWeeks: (date: Date | number, amount: number) => Date,
+  addWeeks: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  addYears: (date: Date | number, amount: number) => Date,
+  addYears: (date: $Readonly<Date> | number, amount: number) => Date,
 
   areIntervalsOverlapping: (
     intervalLeft: Interval,
@@ -62,47 +62,53 @@ declare module.exports: {
   ) => boolean,
 
   closestIndexTo: (
-    dateToCompare: Date | number,
+    dateToCompare: $Readonly<Date> | number,
     datesArray: (Date | number)[]
   ) => number,
 
   closestTo: (
-    dateToCompare: Date | number,
+    dateToCompare: $Readonly<Date> | number,
     datesArray: (Date | number)[]
   ) => Date,
 
-  compareAsc: (dateLeft: Date | number, dateRight: Date | number) => number,
+  compareAsc: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => number,
 
-  compareDesc: (dateLeft: Date | number, dateRight: Date | number) => number,
+  compareDesc: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => number,
 
   differenceInCalendarDays: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInCalendarISOWeeks: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInCalendarISOWeekYears: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInCalendarMonths: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInCalendarQuarters: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInCalendarWeeks: (
-    dateLeft: Date | number,
-    dateRight: Date | number,
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
@@ -110,58 +116,58 @@ declare module.exports: {
   ) => number,
 
   differenceInCalendarYears: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInDays: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInHours: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInISOWeekYears: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInMilliseconds: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInMinutes: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInMonths: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInQuarters: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInSeconds: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInWeeks: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   differenceInYears: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => number,
 
   eachDayOfInterval: (
@@ -173,9 +179,9 @@ declare module.exports: {
 
   eachWeekendOfInterval: (interval: Interval) => Date[],
 
-  eachWeekendOfMonth: (date: Date | number) => Date[],
+  eachWeekendOfMonth: (date: $Readonly<Date> | number) => Date[],
 
-  eachWeekendOfYear: (date: Date | number) => Date[],
+  eachWeekendOfYear: (date: $Readonly<Date> | number) => Date[],
 
   eachWeekOfInterval: (
     interval: Interval,
@@ -184,53 +190,54 @@ declare module.exports: {
     }
   ) => Date[],
 
-  endOfDay: (date: Date | number) => Date,
+  endOfDay: (date: $Readonly<Date> | number) => Date,
 
   endOfDecade: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       additionalDigits?: 0 | 1 | 2
     }
   ) => Date,
 
-  endOfHour: (date: Date | number) => Date,
+  endOfHour: (date: $Readonly<Date> | number) => Date,
 
-  endOfISOWeek: (date: Date | number) => Date,
+  endOfISOWeek: (date: $Readonly<Date> | number) => Date,
 
-  endOfISOWeekYear: (date: Date | number) => Date,
+  endOfISOWeekYear: (date: $Readonly<Date> | number) => Date,
 
-  endOfMinute: (date: Date | number) => Date,
+  endOfMinute: (date: $Readonly<Date> | number) => Date,
 
-  endOfMonth: (date: Date | number) => Date,
+  endOfMonth: (date: $Readonly<Date> | number) => Date,
 
-  endOfQuarter: (date: Date | number) => Date,
+  endOfQuarter: (date: $Readonly<Date> | number) => Date,
 
-  endOfSecond: (date: Date | number) => Date,
+  endOfSecond: (date: $Readonly<Date> | number) => Date,
 
   endOfWeek: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
     }
   ) => Date,
 
-  endOfYear: (date: Date | number) => Date,
+  endOfYear: (date: $Readonly<Date> | number) => Date,
 
   format: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     format: string,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       firstWeekContainsDate?: number,
       locale?: Locale,
-      awareOfUnicodeTokens?: boolean
+      useAdditionalWeekYearTokens?: boolean,
+      useAdditionalDayOfYearTokens?: boolean
     }
   ) => string,
 
   formatDistance: (
-    date: Date | number,
-    baseDate: Date | number,
+    date: $Readonly<Date> | number,
+    baseDate: $Readonly<Date> | number,
     options?: {
       includeSeconds?: boolean,
       addSuffix?: boolean,
@@ -239,8 +246,8 @@ declare module.exports: {
   ) => string,
 
   formatDistanceStrict: (
-    date: Date | number,
-    baseDate: Date | number,
+    date: $Readonly<Date> | number,
+    baseDate: $Readonly<Date> | number,
     options?: {
       addSuffix?: boolean,
       unit?: 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year',
@@ -250,8 +257,8 @@ declare module.exports: {
   ) => string,
 
   formatRelative: (
-    date: Date | number,
-    baseDate: Date | number,
+    date: $Readonly<Date> | number,
+    baseDate: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
@@ -260,49 +267,49 @@ declare module.exports: {
 
   fromUnixTime: (unixTime: number) => Date,
 
-  getDate: (date: Date | number) => number,
+  getDate: (date: $Readonly<Date> | number) => number,
 
-  getDay: (date: Date | number) => number,
+  getDay: (date: $Readonly<Date> | number) => number,
 
-  getDayOfYear: (date: Date | number) => number,
+  getDayOfYear: (date: $Readonly<Date> | number) => number,
 
-  getDaysInMonth: (date: Date | number) => number,
+  getDaysInMonth: (date: $Readonly<Date> | number) => number,
 
-  getDaysInYear: (date: Date | number) => number,
+  getDaysInYear: (date: $Readonly<Date> | number) => number,
 
-  getDecade: (date: Date | number) => number,
+  getDecade: (date: $Readonly<Date> | number) => number,
 
-  getHours: (date: Date | number) => number,
+  getHours: (date: $Readonly<Date> | number) => number,
 
-  getISODay: (date: Date | number) => number,
+  getISODay: (date: $Readonly<Date> | number) => number,
 
-  getISOWeek: (date: Date | number) => number,
+  getISOWeek: (date: $Readonly<Date> | number) => number,
 
-  getISOWeeksInYear: (date: Date | number) => number,
+  getISOWeeksInYear: (date: $Readonly<Date> | number) => number,
 
-  getISOWeekYear: (date: Date | number) => number,
+  getISOWeekYear: (date: $Readonly<Date> | number) => number,
 
-  getMilliseconds: (date: Date | number) => number,
+  getMilliseconds: (date: $Readonly<Date> | number) => number,
 
-  getMinutes: (date: Date | number) => number,
+  getMinutes: (date: $Readonly<Date> | number) => number,
 
-  getMonth: (date: Date | number) => number,
+  getMonth: (date: $Readonly<Date> | number) => number,
 
   getOverlappingDaysInIntervals: (
     intervalLeft: Interval,
     intervalRight: Interval
   ) => number,
 
-  getQuarter: (date: Date | number) => number,
+  getQuarter: (date: $Readonly<Date> | number) => number,
 
-  getSeconds: (date: Date | number) => number,
+  getSeconds: (date: $Readonly<Date> | number) => number,
 
-  getTime: (date: Date | number) => number,
+  getTime: (date: $Readonly<Date> | number) => number,
 
-  getUnixTime: (date: Date | number) => number,
+  getUnixTime: (date: $Readonly<Date> | number) => number,
 
   getWeek: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       firstWeekContainsDate?: 1 | 2 | 3 | 4 | 5 | 6 | 7
@@ -310,14 +317,14 @@ declare module.exports: {
   ) => number,
 
   getWeekOfMonth: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6
     }
   ) => number,
 
   getWeeksInMonth: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
@@ -325,105 +332,141 @@ declare module.exports: {
   ) => number,
 
   getWeekYear: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       firstWeekContainsDate?: 1 | 2 | 3 | 4 | 5 | 6 | 7
     }
   ) => number,
 
-  getYear: (date: Date | number) => number,
+  getYear: (date: $Readonly<Date> | number) => number,
 
-  isAfter: (date: Date | number, dateToCompare: Date | number) => boolean,
+  isAfter: (
+    date: $Readonly<Date> | number,
+    dateToCompare: $Readonly<Date> | number
+  ) => boolean,
 
-  isBefore: (date: Date | number, dateToCompare: Date | number) => boolean,
+  isBefore: (
+    date: $Readonly<Date> | number,
+    dateToCompare: $Readonly<Date> | number
+  ) => boolean,
 
   isDate: (value: any) => boolean,
 
-  isEqual: (dateLeft: Date | number, dateRight: Date | number) => boolean,
-
-  isFirstDayOfMonth: (date: Date | number) => boolean,
-
-  isFriday: (date: Date | number) => boolean,
-
-  isLastDayOfMonth: (date: Date | number) => boolean,
-
-  isLeapYear: (date: Date | number) => boolean,
-
-  isMonday: (date: Date | number) => boolean,
-
-  isSameDay: (dateLeft: Date | number, dateRight: Date | number) => boolean,
-
-  isSameHour: (dateLeft: Date | number, dateRight: Date | number) => boolean,
-
-  isSameISOWeek: (dateLeft: Date | number, dateRight: Date | number) => boolean,
-
-  isSameISOWeekYear: (
-    dateLeft: Date | number,
-    dateRight: Date | number
+  isEqual: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
   ) => boolean,
 
-  isSameMinute: (dateLeft: Date | number, dateRight: Date | number) => boolean,
+  isFirstDayOfMonth: (date: $Readonly<Date> | number) => boolean,
 
-  isSameMonth: (dateLeft: Date | number, dateRight: Date | number) => boolean,
+  isFriday: (date: $Readonly<Date> | number) => boolean,
 
-  isSameQuarter: (dateLeft: Date | number, dateRight: Date | number) => boolean,
+  isLastDayOfMonth: (date: $Readonly<Date> | number) => boolean,
 
-  isSameSecond: (dateLeft: Date | number, dateRight: Date | number) => boolean,
+  isLeapYear: (date: $Readonly<Date> | number) => boolean,
+
+  isMonday: (date: $Readonly<Date> | number) => boolean,
+
+  isSameDay: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameHour: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameISOWeek: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameISOWeekYear: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameMinute: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameMonth: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameQuarter: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
+
+  isSameSecond: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
 
   isSameWeek: (
-    dateLeft: Date | number,
-    dateRight: Date | number,
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
     }
   ) => boolean,
 
-  isSameYear: (dateLeft: Date | number, dateRight: Date | number) => boolean,
+  isSameYear: (
+    dateLeft: $Readonly<Date> | number,
+    dateRight: $Readonly<Date> | number
+  ) => boolean,
 
-  isSaturday: (date: Date | number) => boolean,
+  isSaturday: (date: $Readonly<Date> | number) => boolean,
 
-  isSunday: (date: Date | number) => boolean,
+  isSunday: (date: $Readonly<Date> | number) => boolean,
 
-  isThursday: (date: Date | number) => boolean,
+  isThursday: (date: $Readonly<Date> | number) => boolean,
 
-  isTuesday: (date: Date | number) => boolean,
+  isTuesday: (date: $Readonly<Date> | number) => boolean,
 
   isValid: (date: any) => boolean,
 
-  isWednesday: (date: Date | number) => boolean,
+  isWednesday: (date: $Readonly<Date> | number) => boolean,
 
-  isWeekend: (date: Date | number) => boolean,
+  isWeekend: (date: $Readonly<Date> | number) => boolean,
 
-  isWithinInterval: (date: Date | number, interval: Interval) => boolean,
+  isWithinInterval: (
+    date: $Readonly<Date> | number,
+    interval: Interval
+  ) => boolean,
 
-  lastDayOfDecade: (date: Date | number) => Date,
+  lastDayOfDecade: (date: $Readonly<Date> | number) => Date,
 
-  lastDayOfISOWeek: (date: Date | number) => Date,
+  lastDayOfISOWeek: (date: $Readonly<Date> | number) => Date,
 
-  lastDayOfISOWeekYear: (date: Date | number) => Date,
+  lastDayOfISOWeekYear: (date: $Readonly<Date> | number) => Date,
 
-  lastDayOfMonth: (date: Date | number) => Date,
+  lastDayOfMonth: (date: $Readonly<Date> | number) => Date,
 
   lastDayOfQuarter: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       additionalDigits?: 0 | 1 | 2
     }
   ) => Date,
 
   lastDayOfWeek: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
     }
   ) => Date,
 
-  lastDayOfYear: (date: Date | number) => Date,
+  lastDayOfYear: (date: $Readonly<Date> | number) => Date,
 
-  lightFormat: (date: Date | number, format: string) => string,
+  lightFormat: (date: $Readonly<Date> | number, format: string) => string,
 
   max: (datesArray: (Date | number)[]) => Date,
 
@@ -432,12 +475,13 @@ declare module.exports: {
   parse: (
     dateString: string,
     formatString: string,
-    baseDate: Date | number,
+    baseDate: $Readonly<Date> | number,
     options?: {
       locale?: Locale,
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       firstWeekContainsDate?: 1 | 2 | 3 | 4 | 5 | 6 | 7,
-      awareOfUnicodeTokens?: boolean
+      useAdditionalWeekYearTokens?: boolean,
+      useAdditionalDayOfYearTokens?: boolean
     }
   ) => Date,
 
@@ -449,16 +493,16 @@ declare module.exports: {
   ) => Date,
 
   roundToNearestMinutes: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       nearestTo?: number
     }
   ) => Date,
 
-  setDate: (date: Date | number, dayOfMonth: number) => Date,
+  setDate: (date: $Readonly<Date> | number, dayOfMonth: number) => Date,
 
   setDay: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     day: number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
@@ -466,28 +510,31 @@ declare module.exports: {
     }
   ) => Date,
 
-  setDayOfYear: (date: Date | number, dayOfYear: number) => Date,
+  setDayOfYear: (date: $Readonly<Date> | number, dayOfYear: number) => Date,
 
-  setHours: (date: Date | number, hours: number) => Date,
+  setHours: (date: $Readonly<Date> | number, hours: number) => Date,
 
-  setISODay: (date: Date | number, day: number) => Date,
+  setISODay: (date: $Readonly<Date> | number, day: number) => Date,
 
-  setISOWeek: (date: Date | number, isoWeek: number) => Date,
+  setISOWeek: (date: $Readonly<Date> | number, isoWeek: number) => Date,
 
-  setISOWeekYear: (date: Date | number, isoWeekYear: number) => Date,
+  setISOWeekYear: (date: $Readonly<Date> | number, isoWeekYear: number) => Date,
 
-  setMilliseconds: (date: Date | number, milliseconds: number) => Date,
+  setMilliseconds: (
+    date: $Readonly<Date> | number,
+    milliseconds: number
+  ) => Date,
 
-  setMinutes: (date: Date | number, minutes: number) => Date,
+  setMinutes: (date: $Readonly<Date> | number, minutes: number) => Date,
 
-  setMonth: (date: Date | number, month: number) => Date,
+  setMonth: (date: $Readonly<Date> | number, month: number) => Date,
 
-  setQuarter: (date: Date | number, quarter: number) => Date,
+  setQuarter: (date: $Readonly<Date> | number, quarter: number) => Date,
 
-  setSeconds: (date: Date | number, seconds: number) => Date,
+  setSeconds: (date: $Readonly<Date> | number, seconds: number) => Date,
 
   setWeek: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     week: number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
@@ -496,7 +543,7 @@ declare module.exports: {
   ) => Date,
 
   setWeekYear: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     weekYear: number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
@@ -504,28 +551,28 @@ declare module.exports: {
     }
   ) => Date,
 
-  setYear: (date: Date | number, year: number) => Date,
+  setYear: (date: $Readonly<Date> | number, year: number) => Date,
 
-  startOfDay: (date: Date | number) => Date,
+  startOfDay: (date: $Readonly<Date> | number) => Date,
 
-  startOfDecade: (date: Date | number) => Date,
+  startOfDecade: (date: $Readonly<Date> | number) => Date,
 
-  startOfHour: (date: Date | number) => Date,
+  startOfHour: (date: $Readonly<Date> | number) => Date,
 
-  startOfISOWeek: (date: Date | number) => Date,
+  startOfISOWeek: (date: $Readonly<Date> | number) => Date,
 
-  startOfISOWeekYear: (date: Date | number) => Date,
+  startOfISOWeekYear: (date: $Readonly<Date> | number) => Date,
 
-  startOfMinute: (date: Date | number) => Date,
+  startOfMinute: (date: $Readonly<Date> | number) => Date,
 
-  startOfMonth: (date: Date | number) => Date,
+  startOfMonth: (date: $Readonly<Date> | number) => Date,
 
-  startOfQuarter: (date: Date | number) => Date,
+  startOfQuarter: (date: $Readonly<Date> | number) => Date,
 
-  startOfSecond: (date: Date | number) => Date,
+  startOfSecond: (date: $Readonly<Date> | number) => Date,
 
   startOfWeek: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       locale?: Locale
@@ -533,34 +580,34 @@ declare module.exports: {
   ) => Date,
 
   startOfWeekYear: (
-    date: Date | number,
+    date: $Readonly<Date> | number,
     options?: {
       weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6,
       firstWeekContainsDate?: 1 | 2 | 3 | 4 | 5 | 6 | 7
     }
   ) => Date,
 
-  startOfYear: (date: Date | number) => Date,
+  startOfYear: (date: $Readonly<Date> | number) => Date,
 
-  subDays: (date: Date | number, amount: number) => Date,
+  subDays: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subHours: (date: Date | number, amount: number) => Date,
+  subHours: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subISOWeekYears: (date: Date | number, amount: number) => Date,
+  subISOWeekYears: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subMilliseconds: (date: Date | number, amount: number) => Date,
+  subMilliseconds: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subMinutes: (date: Date | number, amount: number) => Date,
+  subMinutes: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subMonths: (date: Date | number, amount: number) => Date,
+  subMonths: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subQuarters: (date: Date | number, amount: number) => Date,
+  subQuarters: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subSeconds: (date: Date | number, amount: number) => Date,
+  subSeconds: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subWeeks: (date: Date | number, amount: number) => Date,
+  subWeeks: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  subYears: (date: Date | number, amount: number) => Date,
+  subYears: (date: $Readonly<Date> | number, amount: number) => Date,
 
-  toDate: (argument: Date | number) => Date
+  toDate: (argument: $Readonly<Date> | number) => Date
 }

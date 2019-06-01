@@ -36,8 +36,8 @@ type Locale = {
 }
 
 declare module.exports: (
-  date: Date | number,
-  baseDate: Date | number,
+  date: $Readonly<Date> | number,
+  baseDate: $Readonly<Date> | number,
   options?: {
     addSuffix?: boolean,
     unit?: 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year',

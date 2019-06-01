@@ -35,4 +35,4 @@ type Locale = {
   }
 }
 
-declare module.exports: (argument: Date | number) => Date
+declare module.exports: (argument: $Readonly<Date> | number) => Date

@@ -14,8 +14,8 @@ import isSameWeek from '../isSameWeek/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} dateLeft - the first date to check
- * @param {Date|Number} dateRight - the second date to check
+ * @param {Readonly<Date>|Number} dateLeft - the first date to check
+ * @param {Readonly<Date>|Number} dateRight - the second date to check
  * @returns {Boolean} the dates are in the same ISO week
  * @throws {TypeError} 2 arguments required
  *

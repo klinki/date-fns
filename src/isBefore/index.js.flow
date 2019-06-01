@@ -36,6 +36,6 @@ type Locale = {
 }
 
 declare module.exports: (
-  date: Date | number,
-  dateToCompare: Date | number
+  date: $Readonly<Date> | number,
+  dateToCompare: $Readonly<Date> | number
 ) => boolean

@@ -97,8 +97,8 @@ var MINUTES_IN_YEAR = 525600
  *   )
  *   ```
  *
- * @param {Date|Number} date - the date
- * @param {Date|Number} baseDate - the date to compare with
+ * @param {Readonly<Date>|Number} date - the date
+ * @param {Readonly<Date>|Number} baseDate - the date to compare with
  * @param {Object} [options] - an object with options.
  * @param {Boolean} [options.addSuffix=false] - result indicates if the second date is earlier or later than the first
  * @param {'second'|'minute'|'hour'|'day'|'month'|'year'} [options.unit] - if specified, will force a unit

@@ -75,7 +75,7 @@ var unescapedLatinCharacterRegExp = /[a-zA-Z]/
  * |                                 | xxxx    | -0800, +0530, +0000, +123456      |
  * |                                 | xxxxx   | -08:00, +05:30, +00:00, +12:34:56 |
  *
- * @param {Date|Number} date - the original date
+ * @param {Readonly<Date>|Number} date - the original date
  * @param {String} format - the string of tokens
  * @returns {String} the formatted date string
  * @throws {TypeError} 2 arguments required

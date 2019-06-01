@@ -12,7 +12,7 @@ import getTime from '../getTime/index.js'
  *
  * - [Changes that are common for the whole library](https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#Common-Changes).
  *
- * @param {Date|Number} date - the given date
+ * @param {Readonly<Date>|Number} date - the given date
  * @returns {Number} the timestamp
  * @throws {TypeError} 1 argument required
  *

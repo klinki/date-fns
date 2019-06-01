@@ -42,7 +42,7 @@ import toDate from '../toDate/index.js'
  *   )
  *   ```
  *
- * @param {Date|Number} date - the date to check
+ * @param {Readonly<Date>|Number} date - the date to check
  * @param {Interval} interval - the interval to check
  * @returns {Boolean} the date is within the interval
  * @throws {TypeError} 2 arguments required

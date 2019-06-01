@@ -76,8 +76,8 @@ var MINUTES_IN_TWO_MONTHS = 86400
  *   ) //=> 'in about 1 hour'
  *   ```
  *
- * @param {Date|Number} date - the date
- * @param {Date|Number} baseDate - the date to compare with
+ * @param {Readonly<Date>|Number} date - the date
+ * @param {Readonly<Date>|Number} baseDate - the date to compare with
  * @param {Object} [options] - an object with options.
  * @param {Boolean} [options.includeSeconds=false] - distances less than a minute are more detailed
  * @param {Boolean} [options.addSuffix=false] - result indicates if the second date is earlier or later than the first

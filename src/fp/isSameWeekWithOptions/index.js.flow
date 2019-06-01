@@ -52,7 +52,7 @@ type CurriedFn3<A, B, C, R> = <A>(
 
 declare module.exports: CurriedFn3<
   Object,
-  Date | number,
-  Date | number,
+  $Readonly<Date> | number,
+  $Readonly<Date> | number,
   boolean
 >

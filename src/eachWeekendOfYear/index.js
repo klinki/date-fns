@@ -10,7 +10,7 @@ import endOfYear from '../endOfYear/index.js'
  * @description
  * Get all the Saturdays and Sundays in the year.
  *
- * @param {Date|Number} date - the given year
+ * @param {Readonly<Date>|Number} date - the given year
  * @returns {Date[]} an array containing all the Saturdays and Sundays
  * @throws {TypeError} 1 argument required
  * @throws {RangeError} The passed date is invalid

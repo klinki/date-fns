@@ -161,7 +161,13 @@ function generateFlowTypings(fns, aliases, locales) {
   generateFlowLocaleIndexTyping(locales, localeAliasDeclaration)
 }
 
+function replaceTypeModifiers(content) {
+  return content.replace(/Readonly\./g, '$Readonly')
+}
+
 function writeFile(relativePath, content) {
+  content = replaceTypeModifiers(content)
+
   return fs.writeFileSync(
     path.resolve(process.cwd(), relativePath),
     prettier(content, 'flow')
